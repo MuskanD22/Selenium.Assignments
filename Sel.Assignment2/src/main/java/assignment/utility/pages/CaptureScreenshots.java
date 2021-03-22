@@ -1,4 +1,4 @@
-package assignment.utility.pages;
+package assignment.utility;
 
 import java.io.File;
 
@@ -16,7 +16,7 @@ public class CaptureScreenshots {
 			TakesScreenshot ts=(TakesScreenshot)driver;
 			// then we get the screenshot in form of file
 			File source=ts.getScreenshotAs(OutputType.FILE);	
-			dest="C:\\Users\\muskan.dureja\\git\\Selenium.Assignments\\Sel.Assignment2\\Screenshots\\"+UserDefine+".png";
+			dest="C:\\Users\\muskan.dureja\\git\\Selenium.Assignments\\Sel.Assignment2\\Screenshots"+UserDefine+".png";
 			File destinstion=new File(dest);
 			// then we copy the file and save it the location where we want
 			FileUtils.copyFile(source, destinstion);
